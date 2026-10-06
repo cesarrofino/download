@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src https://abacus.jasoncameron.dev; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<meta name="theme-color" content="#7a1c40">
+<title>My Cycle+ — Download</title>
+<meta name="description" content="Descarregue o My Cycle+, o seu acompanhamento do ciclo menstrual.">
+<link rel="icon" href="icon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top"><div class="wrap brand"><img src="icon.png" alt="" width="34" height="34"><span>My Cycle+</span></div></header>
+
+<main class="wrap">
+  <section class="hero">
+    <div>
+      <h1>My Cycle+</h1>
+      <p class="lead">Acompanhe o seu ciclo com calma e clareza. Registe, perceba o seu corpo e antecipe cada fase.</p>
+      <p class="meta"><span>Plataforma: <b id="mPlat">Android</b></span><span>Versão: <b id="mVer">1.0</b></span><span>Tamanho: <b id="mSize">—</b></span></p>
+
+      <div class="card" id="card">
+        <button type="button" class="btn dl" id="dl">
+          <svg viewBox="0 0 24 24"><path d="M12 4v11m0 0l-4-4m4 4l4-4M5 20h14"/></svg>
+          <span id="dlTxt">Fazer download</span>
+        </button>
+        <div class="prog" id="progBox" hidden><i id="prog"></i></div>
+        <p class="msg" id="vmsg" role="status" aria-live="polite"></p>
+        <a class="manual" id="manual" href="#" hidden rel="noopener noreferrer">Se o download não começar, toque aqui</a>
+      </div>
+    </div>
+
+    <div class="stage" aria-hidden="true">
+      <!-- LOGÓTIPO DO APP: substitua o ficheiro icon.png (512×512) -->
+      <div class="appicon"><img src="icon.png" alt="" width="512" height="512"></div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <h2>O que oferece</h2>
+    <div class="grid3">
+      <div><h3>Registo simples</h3><p>Marque o início e o fim do ciclo em segundos, todos os dias.</p></div>
+      <div><h3>Previsões claras</h3><p>Veja a próxima fase e os dias importantes no calendário.</p></div>
+      <div><h3>Privado</h3><p>Os seus dados pessoais são seus. Não vendemos nem partilhamos informação.</p></div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <h2>Como instalar</h2>
+    <ol class="steps">
+      <li>Toque em <b>Fazer download</b> e aguarde 10 segundos.</li>
+      <li>Abra o ficheiro descarregado no seu telemóvel.</li>
+      <li>Se o sistema pedir, permita a instalação a partir desta origem em <b>Definições</b>.</li>
+      <li>Toque em <b>Instalar</b> e abra o My Cycle+.</li>
+    </ol>
+  </section>
+</main>
+
+<footer><div class="wrap">© <span id="yr"></span> My Cycle+. Todos os direitos reservados.</div></footer>
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

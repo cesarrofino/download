@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src https://abacus.jasoncameron.dev; base-uri 'none'; form-action 'none'">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<meta name="referrer" content="no-referrer">
+<title>Admin — My Cycle+</title>
+<link rel="icon" href="icon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="wrap">
+
+  <section class="login" id="loginBox">
+    <div class="brand"><img src="icon.png" alt="" width="34" height="34"><span>My Cycle+ · Admin</span></div>
+    <h1>Área reservada</h1>
+    <div class="field"><label for="code">Código</label><input id="code" type="text" inputmode="numeric" autocomplete="off"></div>
+    <div class="field"><label for="pass">Palavra-passe</label><input id="pass" type="password" autocomplete="off"></div>
+    <button type="button" class="btn dl" id="enter">Entrar</button>
+    <p class="msg" id="lmsg" role="status" aria-live="polite"></p>
+  </section>
+
+  <section id="panel" hidden>
+    <div class="top brand bar-head">
+      <span><img src="icon.png" alt="" width="34" height="34"> My Cycle+ · Painel</span>
+      <button type="button" class="btn ghost" id="out">Sair</button>
+    </div>
+    <div class="stats">
+      <div class="stat main"><span>Downloads</span><b id="sDl">0</b></div>
+      <div class="stat"><span>Hoje</span><b id="sToday">0</b></div>
+      <div class="stat"><span>Visitas</span><b id="sVis">0</b></div>
+      <div class="stat"><span>Verificações falhadas</span><b id="sFail">0</b></div>
+    </div>
+    <div class="bar-wrap"><h2 class="h-flat">Últimos 14 dias</h2><span id="lastDl" class="note flat"></span></div>
+    <div class="chart" id="chart" role="img" aria-label="Downloads por dia"></div>
+    <div class="actions">
+      <button type="button" class="btn ghost" id="csv">Exportar CSV</button>
+      <button type="button" class="btn ghost" id="reset">Repor contadores</button>
+    </div>
+    <p class="note" id="srcNote"></p>
+  </section>
+</main>
+<script src="config.js"></script>
+<script src="admin.js"></script>
+</body>
+</html>
